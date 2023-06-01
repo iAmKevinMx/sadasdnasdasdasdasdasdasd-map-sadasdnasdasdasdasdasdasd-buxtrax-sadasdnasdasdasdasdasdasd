@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mapa :)</title>
+
+  <link rel="stylesheet" href="mainV2.css">
+  <script src="mainV2.js"></script>
+   
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdVS-bCDxtNOAw6nY9BoyGg32tDc8be84&libraries=geometry"></script>
+  <script src="markerwithlabel.js"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <table id="tb_datos">
+    <thead>
+        <th>Perfil</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <div id="opciones">
+    <label for="perfil">Perfil:</label>
+    <input type="text" id="perfil" placeholder="Perfil" readonly>
+    
+    <label for="planta">Planta:</label>
+    <input type="text" id="planta" placeholder="Planta" readonly>
+    
+    <label>E/S:</label>
+    <select id="in_out">
+      <option value="IN">IN</option>
+      <option value="OUT">OUT</option>
+    </select>
+    
+    <label>Hora inicio:</label>
+    <input type="text" id="h_ini1" placeholder="hh:" class="txthoras" readonly>
+    <input type="text" id="h_ini2" placeholder="hh:" class="txthoras" readonly>
+    
+    <label>Hora fin:</label>
+    <input type="text" id="h_fin1" placeholder="hh:" class="txthoras" readonly>
+    <input type="text" id="h_fin2" placeholder="hh:" class="txthoras" readonly>
+
+    <label style="margin-left: 1%;">Geocerca:</label>
+    <select id="select_geocerca">
+      <option value="0">Completo</option>
+      <option value="1">Reducido</option>
+    </select>
+
+    <label style="margin-left: 0.5%;">Centrar:</label>
+    
+    <select id="centrar_mapa">
+      <option value="0">Automático</option>
+      <option value="1">Al clickear</option>
+      <option value="2">Apagado</option>
+    </select>
+    <button id="mapa_hibrido" class="clase_tipo_mapa"><img src="img_hibrido.png" title="Hibrido"></button>
+    <button id="mapa_regular" class="clase_tipo_mapa"><img src="img_regular.png" title="Regular"></button>
+    <button id="trafico" class="clase_tipo_mapa"><img src="img_trafico.png" title="Tráfico"></button>
+    
+
+  </div>
+
+  
+  <script src="mapaV2.js"></script>
+
+  <!--tabla-->
+  <script src="jquery-3.6.0.min.js"></script>
+
+  <div id="linea_recta"></div>
+  <div id="tabla_perfiles">
+    <input type="text" id="textbox">
+    <button onclick="insertarDatos()">Insertar Datos</button>
+    <button onclick="copiarDatos()">Copiar Datos</button>
+    <button onclick="cargar_tabla_mapa()">Cargar tabla del mapa</button>
+    <button onclick="agregarFila()">Agregar Fila</button>
+    <br>
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Perfil</th>
+          <th>Planta</th>
+          <th>In/Out</th>
+          <th>H. Ini 1</th>
+          <th>H. Ini 2</th>
+          <th>H. Fin 1</th>
+          <th>H. Fin 2</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  
+</body>
+
+</html>

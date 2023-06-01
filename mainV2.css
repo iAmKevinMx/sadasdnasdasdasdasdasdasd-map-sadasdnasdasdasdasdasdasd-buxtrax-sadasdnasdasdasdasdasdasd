@@ -1,0 +1,231 @@
+
+
+/* Estilos para la tabla */
+#tb_datos {
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 10%;
+  height: 100%;
+  border-color: white;
+
+}
+
+
+
+body{
+  background-color: #1c1e21;
+}
+#tb_datos thead {
+  min-height: 3.6%;
+  height: 3.6%;
+}
+#textbox {
+  padding: 6px;
+  font-size: 12px;
+  width: 286px;
+  border-radius: 2px;
+  border: 1px solid gray;
+}
+
+#tb_datos td {
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: white; 
+}
+th, td {
+  text-align: left;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+
+}
+
+th {
+  padding: 5px;
+  background-color: lightgray;
+}
+
+
+
+input[type="text"] {
+  padding: 4px;
+  background-color: #1c1e21;
+  color: white;
+} 
+
+label {
+  color: white;
+}
+button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px;
+  border-color: white;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+
+
+
+#map{
+  position: absolute;
+  top: 3.5%;
+  left: 10%;
+  height: 96.5%;
+  width: 90%;
+}
+
+#agg_perfil{
+  height: 2.5%;
+  width: 9.9%;
+  position: absolute;
+  top: 95%;
+  left: 0.05%;
+}
+
+#txt_perfil{
+  height: 1.8%;
+  width: 7.7%;
+  position: absolute;
+  top: 97.5%;
+  left: 0.01%;
+  overflow: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+#opciones{
+  height: 2.4%;
+  width: 89%;
+  position: absolute;
+  top: 0.45%;
+  left: 11%;
+}
+
+
+#cargar_perfil{
+  height: 2.3%;
+  width: 1.95%;
+  position: absolute;
+  top: 97.6%;
+  left: 8.01%;
+}
+
+
+#perfil{
+  border: 1px solid #ffffff;
+}
+
+#planta{
+  border: 1px solid #ffffff;
+}
+
+
+
+.filas_perfiles{
+  padding-left: 0px;
+  border: 0;
+  padding: 4px;
+  background-color: #1c1e21;
+  color: white;
+}
+
+.txthoras{
+  width: 3%;
+  border: 1px solid #ffffff;
+}
+
+#linea_recta{
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 101%;
+  left: 0%;
+  width: 99.9%;
+}
+
+#tabla_perfiles{
+  border: 2px solid #ffffff;
+  background-color: #1c1e21;
+  position: absolute;
+  top: 101%;
+  left: 10%;
+  width: 80%;
+  min-height: 20%;
+}
+
+#tabla{
+  width: 100%;
+}
+
+
+.custom-tooltip {
+  font-weight: bold !important;
+  opacity: 1 !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  width: 40px !important;
+  text-align: center !important;
+  background-color: rgb(253, 255, 170) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  border-radius: 7px;
+}
+
+.tooltip_geo {
+  font-weight: bold !important;
+  opacity: 1 !important;
+  padding: 2px !important;
+  text-align: center !important;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(0, 0, 0) !important;
+  border-radius: 7px;
+}
+
+
+#trafico{
+  height: 100%;
+}
+
+.clase_tipo_mapa {
+  padding: 0;
+  background-color: transparent;
+  align-content: center;
+  position: absolute;
+  height: 100%;
+  width: 1.5%;
+  border: 1px solid #dddddd;
+
+
+}
+
+.clase_tipo_mapa img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  height: 80%;
+
+}
+
+#mapa_hibrido{
+  margin-left: 0.6%;
+} 
+
+#mapa_regular{
+  margin-left: 2.3%;
+} 
+#trafico{
+  margin-left: 4%;
+}
+
